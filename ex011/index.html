@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens em dispositivos diferentes</h1>
+    <p>Podemos gerar mídias de tamanhos diferentes para abrir em dispositivos com telas de tamanhos distintos.</p>
+    <picture>
+        <source media="(max-width: 630px)" srcset="imagens/imagem-p.jpg" type="image/jpg">
+        <source media="(max-width: 930px)" srcset="imagens/imagem-m.jpg" type="image/jpg">
+        <img src="imagens/imagem-g.jpg" alt="Imagem flexível" title="Exemplo">
+    </picture>
+
+    <h1>Audio</h1>
+    <p>Vamos aprender a disponibilizar áudios em nosso site.</p>
+    <audio preload="metadata" controls>
+        <source src="audio/Patience - Guns n' Roses.wav" type="audio/wav">
+        <p>Desculpe mas o seu navegador não pode reproduzir audio, <a href="audio/Patience - Guns n' Roses.wav">clique aqui</a> para fazer download do arquivo.</p>
+    </audio>
+</body>
+</html>

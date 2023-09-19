@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de caixas</title>
+</head>
+<body>
+    <h1>Modelo de Caixas</h1>
+    <hr>
+    <main>
+    <div id="introducao">
+    <h2>O que é uma caixa?</h2>
+    <p>Todo o conteúdo que é apresentado de forma visível em um site está armazenado no que chamamos de caixas (ou box). Elas são containers que podem conter não somente conteúdos em texto, mas também imagens e até mesmo outras caixas.
+    </p>
+    <h3>Anatomia da caixa</h3>
+    <p>Começamos pelo <strong>conteúdo (content)</strong>, que pode ser texto, imagem, vídeo ou outra caixa. Esse conteúdo possui <strong>altura (height)</strong> e <strong>largura (width)</strong>, e a esse conjunto de propriedades damos o nome de <strong>box-size</strong>. O tamanho da caixa não inclui medidas de border, padding, outline ou margin.</p>
+    <p>Depois do conteúdo vem a <strong>borda (border)</strong>. A borda tem configurações de espessura, cor e formato.<br>
+    entre a borda e o conteúdo temos o <strong>padding (prenchimento).</strong><br>
+    Entre a margem e a borda temos o <strong>outline (contorno).</strong></p>
+    <p>As configurações de margin e padding são altura e largura</p>
+    </div>
+
+    <h2>Tipos de Caixa</h2>
+    <h3>Block-level</h3>
+    <p>Um elemento <strong>block-level</strong> sempre se inicia em uma nova linha e ocupa a largura total disponível da página, ou do container em que estiver contido.</p>
+    <h4>Alguns exemplos de elementos block-level:</h4>
+    <ul>
+        <div class="da">
+            <li><code>&lt;address&gt;</code></li>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;main&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+        </div>
+        <div class="db">
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;h1 - h6&gt;</code></li>
+            <li><code>&lt;blockquote&gt;</code></li>
+            <li><code>&lt;ol&gt;</code></li>
+            <li><code>&lt;ul&gt;</code></li>
+        </div>
+        <div class="dc">
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;hr&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;video&gt;</code></li>
+            <li><code>&lt;li&gt;</code></li>
+        </div>
+    </ul>
+       
+
+    <h3>Inline-level</h3>
+    <p>Um elemento inline level não vai começar de uma nova linha, e sim do ponto exato onde foram definidos. E a largura ocupa somente o necessário.</p>
+    <h4>Alguns exemplos de elementos inline-level:</h4>
+    <ul>
+        <div class="da">
+            <li><code>&lt;a&gt;</code></li>
+            <li><code>&lt;button&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+            <li><code>&lt;output&gt;</code></li>
+            <li><code>&lt;span&gt;</code></li>
+        </div>
+        <div class="db">
+            <li><code>&lt;abbr&gt;</code></li>
+            <li><code>&lt;cite&gt;</code></li>
+            <li><code>&lt;q&gt;</code></li>
+            <li><code>&lt;strong&gt;</code></li>
+            <li><code>&lt;code&gt;</code></li>
+        </div>
+        <div class="dc">
+            <li><code>&lt;script&gt;</code></li>
+            <li><code>&lt;label&gt;</code></li>
+            <li><code>&lt;em&gt;</code></li>
+            <li><code>&lt;map&gt;</code></li>
+            <li><code>&lt;select&gt;</code></li>
+        </div>
+    </ul>
+    </main>
+</body>
+</html>
